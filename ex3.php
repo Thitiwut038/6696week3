@@ -20,26 +20,14 @@
     <title>ตัวอย่าง 1 </title>
 </head>
 <body>
-    <h1>โปรแกรม ภาษา HTML</h1>
+    <h1>โปรแกรม ภาษา HTML สร้างฟอร์มข้อมูล</h1>
     664485038 นายธิติวุฒิ ศิริทรัพย์ <br>
     หมู่เรียน66/96 <br>
-        <?php    
-        // ทดสอบภาษา comment php
-        echo'<h2>สวัสดัปีใหม่</h2>';
-        echo'<br>ขอให้ทุกคนประสบแต่ความสุข';
-        // สร้างตัวแปร
-        $name='ธิติวุฒิ';
-        $surname='ศิริทรัพย์';
-        echo'<br>ชื่อของคุณคือ'.$name."".$surname;
-        $x=15;
-        $y=7;
-        $z=$x+$y;
-        echo'<br>ค่าผลบวก=' .$z;
-        $z=$x*$y;
-        echo'<br>ค่าผลคูณ='.$z;
-
-        
-        
-        ?>
+    <form action='ex4.php'method="GET">
+        ชื่อ <input type='text'name="n"> 
+        นามสกุล<input type='text'name="s"> 
+        <input type="submit"value='กดส่งข้อมูล'> <br>
+    
+    </form>
 </body>
 </html>
